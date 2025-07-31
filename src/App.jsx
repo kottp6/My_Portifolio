@@ -10,7 +10,7 @@ import Contact from './Components/Contact/Contact'
 import Education from './Components/Education/Education'
 import Certifications from './Components/Certifications/Certifications'
 import Experiences from './Components/Experiences/Experiences'
-
+import Internship from './Components/Intership/Intership'
 
 function App() {
   
@@ -26,6 +26,7 @@ function App() {
       <Hero></Hero>
       <About></About>
       <Education></Education>
+      <Internship></Internship>
       <Technologies></Technologies>
       <Experiences></Experiences>
       <Projects></Projects>

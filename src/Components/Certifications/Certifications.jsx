@@ -1,37 +1,53 @@
-import React from 'react'
-import { CERTIFICATIONS } from '../../constants'
+import { CERTIFICATIONS } from '../../constants';
 import { CiShare1 } from "react-icons/ci";
 import { motion } from 'framer-motion';
 
 export default function Certifications() {
   return (
-        <div className='border-b border-neutral-900 pb-4'>
-          <motion.h2
-          whileInView={{opacity:1, y:0}}
-          initial ={{opacity : 0, y:-100}}
-          transition={{duration:0.5}} 
-          className="my-20 text-center text-4xl">Certifications</motion.h2>
-          <div>
-            {CERTIFICATIONS.map((cert, index)=>(
-              <div key={index} className='mb-8 flex flex-wrap lg:justify-center'>
-                <motion.div
-                 whileInView={{opacity:1, x:0}}
-                 initial ={{opacity : 0, x:-100}}
-                 transition={{duration:1}}
-                 className="w-full lg:w-1/4">
-                  <img className='mb-6 rounded-lg' src={cert.image} alt={cert.title} width={150} height={150}/>
-                </motion.div>
-                <motion.div
-                whileInView={{opacity:1, x:0}}
-                initial ={{opacity : 0, x:100}}
-                transition={{duration:1}} 
-                className="w-full max-w-xl lg:w-3/4 flex gap-3">
-                    <h3 className='mb-2 mt-16 font-semibold '>{cert.title}</h3>
-                    <a href={cert.link} target='_blank' className='mt-16 text-2xl'><CiShare1></CiShare1></a>
-                </motion.div>
-              </div>
-            ))}
-          </div>
-        </div>
-  )
+    <div className="border-b border-neutral-800 py-16">
+      <motion.h2
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: -80 }}
+        transition={{ duration: 0.6 }}
+        className="my-20 text-center text-4xl"
+      >
+        Certifications
+      </motion.h2>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 place-items-center">
+        {CERTIFICATIONS.map((cert, index) => (
+          <motion.div
+            key={index}
+            whileInView={{ opacity: 1, scale: 1 }}
+            initial={{ opacity: 0, scale: 0.9 }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+            className="relative bg-white/5 backdrop-blur-sm border border-neutral-800 rounded-xl p-6 w-[300px] h-[400px] shadow-lg hover:shadow-purple-700/30 transition-shadow duration-300 flex flex-col items-center justify-between"
+          >
+            {/* Image */}
+            <img
+              src={cert.image}
+              alt={cert.title}
+              className="w-24 h-24 rounded-lg object-cover mb-4"
+            />
+
+            {/* Title */}
+            <h3 className="text-lg font-semibold text-white text-center px-2">
+              {cert.title}
+            </h3>
+
+            {/* Share Button */}
+            <a
+              href={cert.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 text-purple-400 hover:text-purple-300 transition text-2xl"
+              title="View Certificate"
+            >
+              <CiShare1 />
+            </a>
+          </motion.div>
+        ))}
+      </div>
+    </div>
+  );
 }

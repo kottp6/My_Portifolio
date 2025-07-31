@@ -1,14 +1,27 @@
 import project1 from "../assets/projects/Smart.png";
 import project2 from "../assets/projects/Fresh.png";
 import project3 from "../assets/projects/Meal.png";
-import project4 from "../assets/projects/Note.png";
+import project4 from "../assets/projects/bg.png";
 import project5 from "../assets/projects/Weather.png";
-import project6 from "../assets/projects/CRUDS.png";
+import project6 from "../assets/projects/Movie.png";
 import project7 from "../assets/projects/portfolio.png";
 import project8 from "../assets/beni.png";
 import project9 from "../assets/download.png";
+import project10 from "../assets/projects/p10.png";
+import project11 from "../assets/projects/costco.png";
 import logo1 from '../assets/HackerRank.png'
 import logo2 from '../assets/maharatechiti.png'
+
+export const INTERNSHIP = [
+  {
+    title: "Frontend Developer & Cross Platform Mobile Development (Feb 2025 – July 2025)",
+    image: project9,
+    description: `Completed intensive training in HTML, CSS, JavaScript, TypeScript, and modern frameworks like ReactJS and Angular. Learned Cross Platform Mobile Development using Flutter and React Native.
+    Built real-world projects simulating industry practices, applying API integration, Firebase, and state management.
+    Participated in team-based development following Agile methodologies and Git version control.
+    Improved UI/UX design principles, component reusability, and performance optimization`
+  }
+];
 
 export const HERO_CONTENT = `I am a passionate front-end developer with a knack for crafting robust
   and scalable web applications. With 1 year of hands-on experience, I have honed my skills in front-end
@@ -17,7 +30,7 @@ export const HERO_CONTENT = `I am a passionate front-end developer with a knack 
   growth and deliver exceptional user experiences.`;
 
 export const ABOUT_TEXT = `I am a dedicated and versatile Front-end developer with a passion for
- creating efficient and user-friendly web applications. With 2 years of professional experience,
+ creating efficient and user-friendly web applications. With 3 years of professional experience,
   I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL and SQL. 
   My journey in web development began with a deep curiosity for how things work, 
   and it has evolved into a career where I continuously strive to learn and adapt to new challenges. 
@@ -27,34 +40,51 @@ export const ABOUT_TEXT = `I am a dedicated and versatile Front-end developer wi
 
 export const EXPERIENCES = [
   {
-    year: "2022 - Present",
-    role: "Front-end Developer && UI/UX Designer",
+    year: "Nov 2022 – Present | Cairo, Egypt",
+    role: "Front-end Developer",
     company: "Freelancer",
-    description: `I am developing and maintaining web applications using HTML, CSS, JavaScript,
-     React.js. Implemented RESTful APIs and integrated with SQL databases.`,
-    technologies: ["Javascript", "React.js", "Next.js", "SQL"],
+    description: `Worked as a freelance front-end developer on various projects.`,
+    technologies: ["React", "Authentication", "GitHub", "Responsive Design"],
+    projects: [
+      { name: "Note Application", links: { github: "https://github.com/kottp6/NoteApplicationReact", video: "https://www.linkedin.com/posts/mahmoud-hussein-0bb055242_note-application-with-react-js-activity-7262839965783388163-Qac9/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADwp108BQ3qGUZG-G2cUIIkoBXGE6x2CfFc" } },
+      { name: "Create Authentication" },
+      { name: "MovicEg Website", links: { live: "https://www.moviceg.com/" } },
+      { name: "Tech-seeds learning website", links: { live: "https://tech-seeds.vercel.app/" } }
+    ]
   },
   {
-    year : "Feb 2025 - July 2025",
-    role : "Front-end & cross Platform application",
-    company : "ITI Program",
-    description : `I am Learning Web development using HTML, CSS, JavaScript, 
-    OOP, ES6, JQuery, Bootstrap, TailwindCSS, SASS`,
-    technologies : ["ReactJS", "Angular", "Flutter", "NodeJS", "React-Native"]
+    year: "Feb 2023 – Present",
+    role: "UI/UX Developer",
+    company: "Freelancer",
+    description: `Designed user interfaces and improved user experience across platforms.`,
+    technologies: ["Figma", "Mobile UI", "Design Systems"],
+    projects: [
+      { name: "Mobile Application: FeL7za" },
+      { name: "Website: Medicine Website" }
+    ]
   }
-  
 ];
 
+
 export const PROJECTS = [
+  {
+    title: "Handmade E-Commerce Website",
+    image: project10,
+    description:
+      "A full-stack handmade e-commerce platform that connects customers with vendors offering handcrafted products. The system supports a smooth and secure shopping experience, real-time admin control, and a vendor management system.",
+    technologies: ["HTML5", "CSS3", "React", "JavaScript", "TypeScript", "TailwindCSS", "Firebase", "Context API", "Cloudinary"],
+    liveDemo : "https://hand-made-website-graduation-projec-seven.vercel.app/"
+  },
   {
     title: "Smart Assistant Glasses",
     image: project1,
     description:
-    "It is responsive SAG website, It is help blind people to buy glasses for used in his life and Contain Dashboard for Admin",
+    "The project consists of Website and Dashboard. The Website is for showing our product and enables the user to place an order. The Dashboard is for Admin control to show an overview and statistics about the product.",
     technologies: ["HTML5", "CSS3", "Angular", "JavaScript", "TypeScript", "Bootstrap"],
+    liveDemo : "https://www.linkedin.com/posts/mahmoud-hussein-0bb055242_sag-smartassistantglasses-aiforaccessibility-activity-7085287650022035457-ZIgo?utm_source=share&utm_medium=member_desktop&rcm=ACoAADwp108BQ3qGUZG-G2cUIIkoBXGE6x2CfFc"
   },
   {
-    title: "E-commerce Application",
+    title: "E-commerce Fresh Cart",
     image: project2,
     description:
       `An e-commerce website help user for buy anything. 
@@ -63,6 +93,22 @@ export const PROJECTS = [
       Developed responsive UI components with React and Bootstrap, 
       Managed State using Context API.`,
     technologies: ["HTML5", "CSS3", "React", "TailwindCSS", "Redux", "JavaScript", "TypeScript"],
+    liveDemo : "https://www.linkedin.com/posts/mahmoud-hussein-0bb055242_react-webdevelopment-tailwindcss-activity-7253044158003638272-4jW6/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADwp108BQ3qGUZG-G2cUIIkoBXGE6x2CfFc"
+  },
+  {
+    title: "E-commerce Costco",
+    image: project11,
+    description:
+      `A fully functional, responsive e-commerce web application built using vanilla JavaScript, HTML, and CSS. The app includes separate roles for Admin and User, with dedicated features for managing products and shopping activities. It uses localStorage for persistence and integrates with an external API for real product data.`,
+    technologies: ["HTML5", "CSS3", "JavaScript", "API", "LocalStorage"],
+    liveDemo : "https://e-commerce-appliction-six.vercel.app/"
+  },
+  {
+    title: "The Movie Application",
+    image : project6,
+    description: "A modern and feature-rich Movie Web Application built with Angular 17, offering seamless user authentication, movie browsing, and personalized experiences. The app integrates with The Movie Database (TMDb) API to fetch real-time movie data, and includes both public and protected routes.",
+    technologies : ["HTML5", "CSS3", "Angular", "TypeScript", "TailwindCSS", "API"],
+    liveDemo : "https://movie-application-cbut.vercel.app/movies"
   },
   {
     title: "The Meal Website",
@@ -70,6 +116,7 @@ export const PROJECTS = [
     description:
       "It is responsive Meal website, helps user for choose any meal and how to do it",
     technologies: ["HTML5", "CSS3", "Bootstrap", "Jquery", "JacaScript", "API"],
+    liveDemo : "https://yummy-app-js.vercel.app/"
   },
   {
     title: "Note Application",
@@ -77,13 +124,15 @@ export const PROJECTS = [
     description:
       "It is responsive Note website, It is help user for add note, delete and update.",
     technologies: ["HTML5", "CSS3", "JavaScript", "React", "Context API", "TailwindCSS"],
+    liveDemo : "https://note-application-react.vercel.app/"
   },
   {
     title: "Weather Application",
     image: project5,
     description:
       "A web application that provides weather information based on user input, Integrated a weather API to fetch and display weather data and Implemented a user-friendly interface with dynamic updates based on user input",
-    technologies: ["HTML5", "CSS3", "JavaScript", "API"],
+    technologies: ["HTML5", "CSS3", "JavaScript", "API", "React", "TailwindCSS"],
+    liveDemo : "https://weather-app-react-bay-eta.vercel.app/"
   },
   {
     title: "Portfolio Website",
@@ -91,17 +140,7 @@ export const PROJECTS = [
     description:
       "A personal portfolio website showcasing projects, skills, and contact information",
     technologies: ["HTML5", "CSS3", "JavaScript", "React", "TailswindCSS"],
-  },
-  {
-    title: "CRUDS Application",
-    image: project6,
-    description:
-      `A web application for creating, reading, updating and deleteing items,
-      ,Developed a full CRUDS functionality for item management. 
-      ,Implemented a user-friendly interface with dynamic updates.
-      and Utilized local storage for persistent data management.
-`,
-    technologies: ["HTML", "CSS", "JavaScript", "Local Storage"],
+    liveDemo : "https://handmade-ecommerce-website.vercel.app/"
   },
 ];
 
