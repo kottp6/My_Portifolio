@@ -8,7 +8,7 @@ import project7 from "../assets/projects/portfolio.png";
 import project8 from "../assets/beni.png";
 import project9 from "../assets/download.png";
 import project10 from "../assets/projects/p10.png";
-import project11 from "../assets/projects/costco.png";
+import project11 from "../assets/projects/Costco.png";
 import logo1 from '../assets/HackerRank.png'
 import logo2 from '../assets/maharatechiti.png'
 
